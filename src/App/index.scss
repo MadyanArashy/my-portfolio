@@ -30,6 +30,7 @@ $purple-tertiary: #764071;
   font-family: 'alegreya sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 20px;
 
   color-scheme: light dark;
   color: #5F5F5F;
@@ -39,9 +40,21 @@ $purple-tertiary: #764071;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+@mixin flex($direction: row) {
+  display: flex;
+  flex-flow: $direction wrap;
+}
+
+.center {
+  display: block;
+  margin: auto;
+  justify-self: center;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 480px;
   margin: auto; 
 }
