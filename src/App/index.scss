@@ -43,9 +43,9 @@ $purple-tertiary: #764071;
   overflow: hidden;
 }
 
-@mixin flex($direction: row) {
+@mixin flex($direction: row, $wrap: wrap) {
   display: flex;
-  flex-flow: $direction wrap;
+  flex-flow: $direction $wrap;
 }
 
 .center {
